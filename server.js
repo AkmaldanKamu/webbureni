@@ -29,12 +29,31 @@ app.get("/cancel.html", (req, res) =>{
 
 let stripeGateway = stripe(process.env.stripe_key)
 app.post("/stripe-checkout",async(req,res) =>{
+    const lineItems =req.body.items.map((item)=> {
+        const unitAmount = parseInt(parseFloat(item.price)* 100)
+        console.log("item-price:", item.price);
+        console.log("unitAmount:", unitAmount);
+        return{
+            price_data:{
+                currency: "usd",
+                product_data:{
+                    nama: item.title,
+                    images:[item.image],
+                },
+                unit_amount:unitAmount,
+            },
+            quantity:item.quantity,
+        }
+    })
     const session = await stripeGateway.checkout.sessions.create({
         payment_method_types:["card"],
         mode:"payment",
         success_url:`http://localhost:3000/success.html`,
         cancel_url:`http://localhost:3000/cancel.html`,
+        billing_address_collection: "require",
+        line_items:lineItems,
     })
+    res.json({url:session.url})
 })
 
 app.listen(3000, () => {
