@@ -2,10 +2,11 @@
   "dependencies": {
     "boxicons": "^2.1.4",
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "express.js": "^1.0.0",
     "nodejs": "^0.0.0",
     "nodemon": "^3.1.0",
-    "stripe": "^15.7.0"
+    "stripe": "^15.8.0"
   },
   "name": "webbureni",
   "version": "1.0.0",
