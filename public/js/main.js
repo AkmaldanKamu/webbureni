@@ -2,53 +2,55 @@
 const products = [
   {
     id: 1,
-    title: "Autumn Hoodie",
+    title: "KUE NASTAR",
     price: 100,
-    image: "https://pangaia.com/cdn/shop/products/Recycled-Nylon-NW-Flwrdwn-Quilted-Collarless-Jacket-Cerulean-Blue-Female-1_bf4b2a54-8a7f-4174-bc49-8ef22b24bfdd.jpg?v=1666708230&width=1426",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsBARxNovc7VRQNbgpljdJ6nuqdJ3hrj9kng&s",
   },
   {
     id: 2,
-    title: "FUSION HOODIE",
+    title: "KUE PUTRI SALJU",
     price: 70,
-    image: "https://images.undiz.com/on/demandware.static/-/Sites-ZLIN-master/default/dw2264d914/merch/BTS/654206666_x.jpg?sw=1250",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgR4UikWxdgmYLmNBlMLfGap61RyGjnIieXw&s",
   },
   {
     id: 3,
-    title: "Chestnut Brown",
+    title: "KUE KACANG",
     price: 60,
-    image: "https://pangaia.com/cdn/shop/products/Recycled-Cashmere-Core-Hoodie-Chestnut-Brown-Male-1.jpg?v=1663947464&width=1426",
+    image: "https://upload.wikimedia.org/wikipedia/id/1/1f/Kue_kacang_tanah.jpg",
   },
   {
     id: 4,
-    title: "Nike Sportswear",
+    title: "KUE SEMPRIT",
     price: 55,
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/61734ec7-dad8-40f3-9b95-c7500939150a/sportswear-club-mens-french-terry-crew-neck-sweatshirt-tdFDRc.png",
+    image: "https://image.popmama.com/content-images/post/20230406/1-cef8909573e5cd41e616f7dbda9098d8.jpg?width=1200&height=800",
   },
   {
     id: 5,
-    title: "Champion BASIC",
+    title: "KUE KEJU",
     price: 76,
-    image: "https://img01.ztat.net/article/spp-media-p1/7067458719b744fe81ffee62d3d0b912/abad421e7d8e47f08a2abc1c6ffe07dc.jpg?imwidth=1800",
+    image: "https://asset.kompas.com/crops/YFRTpYQZXPTw9UeVi2uDoGX4W8c=/0x258:800x791/750x500/data/photo/2022/04/17/625bae2b74ac6.jpg",
   },
   {
     id: 6,
-    title: "Cotton Hoodie",
+    title: "RENDANG",
     price: 100,
-    image: "https://pangaia.com/cdn/shop/files/Reclaim-3.0-Hoodie-Reclaim-Jade-Womens-3.jpg?v=1693398673&width=1426",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXrIXEH0SpKx7CusjpJC_IFg_oUuGakgEdg&s",
   },
   {
     id: 7,
-    title: "CLASSIC CREWNECK",
+    title: "KUE LIDAH KUCING",
     price: 100,
-    image: "https://img01.ztat.net/article/spp-media-p1/10cea44041564f81ac585fc6c8978907/c4c32dbc45dd4dbc9d15087c846538f2.jpg?imwidth=1800",
+    image: "https://down-id.img.susercontent.com/file/4687a565610e83a5614b9d6d85bdb86b",
   },
   {
     id: 8,
-    title: "TAPE HOODED",
+    title: "KUE COKLAT",
     price: 80,
-    image: "https://img01.ztat.net/article/spp-media-p1/d391f90be278469ebfdff731800cfccc/6d2101bd672f4e059501f01fe726f315.jpg?imwidth=1800",
+    image: "https://asset.kompas.com/crops/1imGaoYk0I_ldovogeJKbeu6neA=/57x0:901x563/750x500/data/photo/2021/02/26/603925798ecd8.jpg",
   },
 ];
+
+
 
 // Menambahkan produk ke dalam list dan element
 const productList = document.getElementById('productList');

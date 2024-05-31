@@ -22,6 +22,9 @@ body {
     color: var(--bg-color);
 }
 
+.nastar{
+    color: #000;
+}
 img {
     width: 100%;
 }
@@ -64,6 +67,7 @@ header {
     text-transform: uppercase;
     color: var(--main-color);
     font-weight: 700;
+    text-decoration: none;
 }
 
 .navbar {
@@ -162,7 +166,7 @@ header {
 
 .product-img {
     width: 100%;
-    height: 350px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -190,6 +194,7 @@ header {
     padding: 10px;
     margin-top: 0.6rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .cart-container {

@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const cartItems = cartItemsContainer.innerHTML;
         const cartTotal = document.getElementById('cartTotal').innerText;
 
-        // Menyimpan gaya asli tombol remove
+        
         const removeBtns = document.querySelectorAll('.remove-from-cart');
         const originalStyles = [];
         removeBtns.forEach(btn => {
             originalStyles.push(btn.style.display);
-            btn.style.display = 'none'; // Menghilangkan tombol remove saat mencetak
+            btn.style.display = 'none'; 
         });
 
         const receiptContent = `
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     display: none;
                 }
             </style>
-            <h2>Shopping Receipt</h2>
+            <h2>Hasil Print Belanjaan</h2>
             <div id="cartItems">
                 ${cartItems}
             </div>
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         const printWindow = window.open('', '_blank');
-        printWindow.document.write('<html><head><title>Shopping Receipt</title></head><body>');
+        printWindow.document.write('<html><head><title>Toko Akmal</title></head><body>');
         printWindow.document.write(receiptContent);
         printWindow.document.write('</body></html>');
         printWindow.document.close();
