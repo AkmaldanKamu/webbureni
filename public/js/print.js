@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
         printWindow.document.close();
         printWindow.print();
 
-        // Mengembalikan gaya asli tombol remove setelah mencetak
         removeBtns.forEach((btn, index) => {
             btn.style.display = originalStyles[index];
         });
